@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(pexels-designdiva-33728154.jpg);
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    background-color: white;
+    height: 100vh;
+    width: max(40%,600px);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 800;
+}
+
+form{
+
+    width: min(400px,100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+form > div{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+form label{
+
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(136, 136, 239);
+    color: white;
+    border-radius: 15% 0% 0% 15%;
+
+}
+
+svg{
+
+   padding:10px;
+   
+}
+
+input{
+
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font:initial;
+    text-align: left;
+    border: rgb(223, 223, 240);
+    background-color: rgb(223, 223, 240);
+    transition: 10ms ease;
+}
+
+form input:hover{
+     border: 2px solid black;
+}
+
+form input:focus{
+
+   outline: none;
+
+}
+  
+div:has(input:focus) > label{
+
+background-color: black;
+
+}
+ 
+button{
+
+margin: 20px;
+height: 50px;
+width: 200px;
+border-radius: 1000px;
+border: none;
+background-color: rgb(127, 127, 240);
+color: white;
+font-size: 15px;
+letter-spacing: 1px;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+form button:hover{
+
+   background-color: black;
+
+}
+
+
+p{
+    font:initial;
+    font-size: 20px;
+}
+
+@media(max-width:1100px) {
+
+    .wrapper{
+
+     width:min(500px,100%);
+     border-radius: 0;
+
+    }
+    
+}
+   
+
